@@ -10,5 +10,5 @@ class Note {
   //from
 
   factory Note.fromJson(Map<String, dynamic> json) =>
-      Note(title: json['title'], description: json['description ,']);
+      Note(title: json['title'], description: json['description']);
 }

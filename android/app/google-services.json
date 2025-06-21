@@ -1,0 +1,234 @@
+{
+  "project_info": {
+    "project_number": "949084502977",
+    "project_id": "flit-crud-cf324",
+    "storage_bucket": "flit-crud-cf324.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949084502977:android:e6089090e69523f2488d40",
+        "android_client_info": {
+          "package_name": "Cvs_flutter.crud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949084502977-du0mlaaubg896rgp5slasga49gnpfc3d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "Cvs_flutter.crud",
+            "certificate_hash": "529c882bb847b06047bad97dfb90547f9cb36b50"
+          }
+        },
+        {
+          "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqMTaRsWZa2M7D7QcHhf3q9Jqc7JifXrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "949084502977-897ejtj4up2noroti469ta2ippsc4mqu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blink"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949084502977:android:470db21b6262dd65488d40",
+        "android_client_info": {
+          "package_name": "Cvs_flutter.nike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqMTaRsWZa2M7D7QcHhf3q9Jqc7JifXrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "949084502977-897ejtj4up2noroti469ta2ippsc4mqu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blink"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949084502977:android:efc8e2eb85d308f7488d40",
+        "android_client_info": {
+          "package_name": "com.example.blink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqMTaRsWZa2M7D7QcHhf3q9Jqc7JifXrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "949084502977-897ejtj4up2noroti469ta2ippsc4mqu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blink"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949084502977:android:c9a357e93e28697b488d40",
+        "android_client_info": {
+          "package_name": "com.example.notes_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqMTaRsWZa2M7D7QcHhf3q9Jqc7JifXrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "949084502977-897ejtj4up2noroti469ta2ippsc4mqu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blink"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949084502977:android:2ac158097adede4b488d40",
+        "android_client_info": {
+          "package_name": "com.example.sneakx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqMTaRsWZa2M7D7QcHhf3q9Jqc7JifXrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "949084502977-897ejtj4up2noroti469ta2ippsc4mqu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blink"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949084502977:android:15d440617daf5789488d40",
+        "android_client_info": {
+          "package_name": "com.example.sneakxadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqMTaRsWZa2M7D7QcHhf3q9Jqc7JifXrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949084502977-ravkb12jc83hd27hc30i7ga38nbf5v01.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "949084502977-897ejtj4up2noroti469ta2ippsc4mqu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.blink"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

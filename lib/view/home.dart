@@ -1,8 +1,12 @@
+// ignore_for_file: curly_braces_in_flow_control_structures
+
 import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:notes_app/model/note.dart';
+import 'package:notes_app/service/firestore_services.dart';
 import 'package:notes_app/view/add_note.dart';
+import 'package:notes_app/view/edit_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -50,6 +54,8 @@ class _HomeScreenState extends State<HomeScreen> {
     saveNotes();
   }
 
+  final firestore = FirestoreServices();
+
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
@@ -58,18 +64,66 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             Expanded(
-              child:
-                  notes.isEmpty
-                      ? const Center(child: Text('No notes yet.'))
-                      : ListView.builder(
-                        itemBuilder: (context, index) {
-                          return CupertinoListTile(
-                            title: Text(notes[index].title),
-                            subtitle: Text(notes[index].description),
-                          );
-                        },
-                        itemCount: notes.length,
+              child: StreamBuilder<List<Note>>(
+                stream: firestore.getNotes(),
+                builder: (context, snapshot) {
+                  // Handle connection state
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return const Center(child: CupertinoActivityIndicator());
+                  }
+
+                  // Handle errors
+                  if (snapshot.hasError) {
+                    return Center(child: Text('Error: ${snapshot.error}'));
+                  }
+
+                  // Handle empty state
+                  if (!snapshot.hasData || snapshot.data!.isEmpty) {
+                    return const Center(
+                      child: Text(
+                        'No notes yet',
+                        style: TextStyle(color: CupertinoColors.systemGrey),
                       ),
+                    );
+                  }
+                  final notes = snapshot.data!;
+                  return ListView.builder(
+                    itemCount: notes.length,
+                    itemBuilder: (context, index) {
+                      final note = notes[index];
+
+                      return Dismissible(
+                        key: ValueKey(note.title), // use unique key
+                        direction: DismissDirection.endToStart,
+                        background: Container(
+                          color: CupertinoColors.systemRed,
+                          alignment: Alignment.centerRight,
+                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          child: const Icon(
+                            CupertinoIcons.delete,
+                            color: CupertinoColors.white,
+                          ),
+                        ),
+                        onDismissed: (_) async {
+                          await firestore.deleteNote(note);
+                        },
+                        child: CupertinoListTile(
+                          title: Text(note.title),
+                          subtitle: Text(note.description),
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              CupertinoPageRoute(
+                                builder: (_) => EditNoteScreen(note: note),
+                              ),
+                            );
+                          },
+                        ),
+                      );
+                    },
+                  );
+                },
+              ),
             ),
 
             CupertinoButton.filled(
@@ -80,7 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   CupertinoPageRoute(builder: (context) => AddNoteScreen()),
                 );
                 if (newNote != null && newNote is Note) {
-                  addNote(newNote);
+                  firestore.addNote(newNote);
                 }
               },
             ),
