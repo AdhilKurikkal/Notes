@@ -11,7 +11,7 @@ class CupertinoListTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: const BoxDecoration(
-        border: Border(bottom: BorderSide(color: CupertinoColors.separator)),
+        border: Border(bottom: BorderSide(color: CupertinoColors.white)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
