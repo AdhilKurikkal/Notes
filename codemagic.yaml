@@ -6,12 +6,16 @@ workflows:
     environment:
       flutter: stable
       xcode: latest
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: master     # Only run on master branch
+          include: true
     scripts:
       - name: Get packages
         script: flutter pub get
-
       - name: Build for iOS simulator
         script: flutter build ios --simulator --debug
-
     artifacts:
-      - build/ios/iphonesimulator/*.app
+      - build/ios/iphonesimulator/**/*.app
